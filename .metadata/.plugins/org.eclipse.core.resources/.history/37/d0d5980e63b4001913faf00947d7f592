@@ -1,0 +1,17 @@
+package org.cts.test;
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+
+public class Demo {
+	
+	@BeforeClass
+	public static void launchBrowser()
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\raja sekar\\eclipse-workspace\\JunitDay1\\Testing\\Driver\\chromedriver.exe");
+		WebDriver driver =new ChromeDriver();
+		driver.get("https://en-gb.facebook.com/login/");
+	}
+	
+
+}
